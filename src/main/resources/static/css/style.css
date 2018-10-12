@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+	font-size: 0.97em;
+	line-height: 1.618;
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
