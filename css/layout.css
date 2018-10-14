@@ -17,7 +17,6 @@
 
 .container{
 	position: relative;
-/*	max-width: 85vw;*/
 	margin: 0 auto;
 }
 
@@ -63,21 +62,10 @@ section {
 	position: relative;
 }
 
-.thumb:hover{
-	transition: .5s;
-	opacity: 0.3;
-}
-
-.thumb:hover .thumb-caption {
-	transition: .5s;
-	opacity: 1;
-}
-
 .thumb-caption {
 	position: absolute;
 	left: 1rem;
 	bottom: 0;
-	opacity: 0;
 	text-align: center;
 }
 
@@ -106,7 +94,7 @@ section {
 	margin-top: 2rem;
 }
 
-#about-skills-list li {
+#about-skills-list ul li {
 	padding: .25rem;
 	border: 1px solid var(--color-1);
 	text-align: center;
@@ -151,10 +139,6 @@ section {
 
 #project-thumbs a:hover{
 	background-color: var(--color-1);
-}
-
-#project-thumbs a:hover h3{
-	opacity: 1;
 }
 
 #project-thumbs ul{

@@ -36,12 +36,27 @@ header {
 	color: var(--light-grey);
 }
 
+.thumb:hover{
+	transition: .5s;
+	opacity: 0.3;
+}
+
+.thumb:hover .thumb-caption {
+	transition: .5s;
+	opacity: 1;
+}
+
 .thumb-caption {
 	color: var(--dark-grey);
+	opacity: 0;
 }
 
 #about {
 	background-image: url("../images/hemlock.jpg");
 	background-size: auto 100%;
 	color: var(--white);
+}
+
+#project-thumbs a:hover h3{
+	opacity: 1;
 }
