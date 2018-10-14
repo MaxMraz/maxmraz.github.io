@@ -15,9 +15,9 @@
 				<p class="header-text">Software Developer, Designer</p>
 				<a href="#about">Contact</a>
 			</div>
-			<figure id="header-image">
+<!-- 			<figure id="header-image">
 				<img src="images/forest.jpg">
-			</figure>
+			</figure> -->
 		</header>
 
 
@@ -28,35 +28,35 @@
 				<li>
 					<figure>
 						<a href="#oceans-heart">
-							<img src="images/project-1-screen.jpg">
+							<img src="images/project-1-screen.jpg" class="thumb">
+							<h3 class="thumb-caption">Ocean's Heart</h3>
 						</a>
+						
 					</figure>
 				</li>
 				<li>
 					<figure>
 						<a href="#virtual-pet">
-							<img src="images/project-2-screen.jpg">
+							<img src="images/project-2-screen.jpg" class="thumb">
+							<h3 class="thumb-caption">Virtual Pet<h3>
 						</a>
+					
 					</figure>
 				</li>
 				<li>
 					<figure>
 						<a href="#virtual-pet-shelter">
-							<img src="images/project-3-screen.jpg">
+							<img src="images/project-3-screen.jpg" class="thumb">
+							<h3 class="thumb-caption">Virtual Pet Shelter</h3>
 						</a>
+						
 					</figure>
 				</li>
 				<li>
 					<figure>
 						<a href="#!">
-							<img src="images/project-4-screen.jpg">
-						</a>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<a href="#!">
-							<img src="images/project-5-screen.jpg">
+							<img src="images/sweaters.jpg" class="thumb">
+							<h3 class="thumb-caption">Greg's Sweaters, Reviewed</h3>
 						</a>
 					</figure>
 				</li>
@@ -66,15 +66,16 @@
 
 
 		<section id="about">
-			<h3 id="about-header">About Me:</h3>
 			<figure id="headshot">
-
-				<a href="tel:6147430103">Call</a>
-				<a href="mailto:max.mraz.11@gmail.com">Email</a>
-				<a href="https://github.com/maxmraz">Github</a>
-				<a href="https://linkedin.com/in/max-mraz">Linkedin</a>
-				<a href="https://twitter.com/11Mraz">Twitter</a>
 				<img id="headshot-photo" src="images/mountains.jpg" alt="Portrait of the Artist">
+				<div id="contact-info">
+					<a href="tel:6147430103">Call</a>
+					<a href="mailto:max.mraz.11@gmail.com">Email</a>
+					<a href="https://github.com/maxmraz">Github</a>
+					<a href="https://linkedin.com/in/max-mraz">Linkedin</a>
+					<a href="https://twitter.com/11Mraz">Twitter</a>
+				</div>
+				
 			</figure>
 
 			<div id="about-text">
@@ -90,13 +91,15 @@
 						<li>Javascript</li>
 						<li>HTML/CSS</li>
 						<li>Git</li>
-						<li>Test Driven Design</li>
-						<li>Agile Methodology</li>
-						<li>Databases/SQL</li>
+						<li>TDD</li>
+						<li>Agile</li>
+						<li>Databases</li>
+						<li>SQL</li>
 						<li>Lua Scripting</li>
-						<li>Spring MVC</li>
+						<li>Spring Boot</li>
+						<li>MVC</li>
 						<li>Graphic Design</li>
-						<li>UX and UI Design</li>
+						<li>UX and UI</li>
 					</ul>
 				</div>
 			</div>
@@ -107,6 +110,22 @@
 
 
 		<main id="projects">
+
+			<article class="project" id="oceans-heart">
+				<figure>
+					<img src="images/project-1-screen.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Ocean's Heart</h2>
+					<p>
+						A 2D action adventure game. Play as a daughter searching an elaborate and detailed archipelago for her father, who is searching the same world for the pirates that attacked their home. Fight through dungeons, help quirky characters, uncover mysteries in ancient ruins.
+					</p>
+					<p>
+						Lua Scripting, API use, Graphic Design, UX Design, Sound Design, Project Management, Marketing
+					</p>
+					<a href="https://twitter.com/11mraz">Developer Log</a>
+				</div>
+			</article>
 
 			<article class="project" id="virtual-pet">
 				<figure>
@@ -130,7 +149,7 @@
 				<div class="project-text">
 					<h2>Virtual Pet Shelter</h2>
 					<p>
-						The logical continuation of the Virtual Pet project, in which you find yourself operating Max and Riley's Shelter for Abandoned and Feral Pet Rocks. Adopt and care for as many pet rocks as you want, but each will need to be fed, watered, and played with or else they may crumble to dust.
+						The logical continuation of the Virtual Pet project, in which you find yourself operating Max and Riley's Shelter for Abandoned and Feral Pet Rocks. Adopt and care for as many pet rocks as you want, but each will need to be fed, watered, and played with or else they will crumble to dust. What will you feed your rocks? Will they grow happy enough to get loving families to adopt them?
 					</p>
 					<p>
 						Java, Test-Driven Design and Unity Tests, Collections, Pair Programming
@@ -138,20 +157,22 @@
 				</div>
 			</article>
 
-			<article class="project" id="oceans-heart">
+			<article class="project" id="reviews-site">
 				<figure>
-					<img src="images/project-1-screen.jpg">
+					<img src="images/sweaters.jpg">
 				</figure>
 				<div class="project-text">
-					<h2>Ocean's Heart</h2>
+					<h2>Greg's Sweaters, Reviewed</h2>
 					<p>
-						A 2D action adventure game. Play as a daughter searching an elaborate and detailed archipelago for her father, who is searching the same world for the pirates that attacked their home. Fight through dungeons, help quirky characters, uncover mysteries in ancient ruins.
+						A school project to make a review website. In this case, a website created to review the sweater collection of someone's friend. As you scroll through the sometimes-harsh reviews of an oft-mocked collection of sweaters, you realize the depts of the friendship between Greg and the writer.
 					</p>
 					<p>
-						Lua Scripting, API use, Graphic Design, UX Design, Sound Design, Project Management, Marketing
+						HTML, Spring Boot, MVC, Dynamic Webpages and Templates
 					</p>
 				</div>
 			</article>
+
+
 
 		</main>
 

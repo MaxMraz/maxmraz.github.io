@@ -1,12 +1,47 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+:root {
+
+	--white: #C7D7D7;
+	--color-1: #93A59E;
+	--light-grey: #565944;
+	--dark-grey: #3D3F34;
+	--color-2: #9C792E;
+
+}
+
 
 * {
-	font-size: 1em;
 	line-height: 1.618;
 	list-style: none;
 	font-family: 'Open Sans', sans-serif;
 }
 
 a {
+	color: var(--color-2);
 	text-decoration: none;
+}
+
+a:hover {
+	background-color: var(--color-1);
+	transition: .3s;
+}
+
+body {
+	background-color: var(--color-1);
+}
+
+header {
+	background-image: url(../images/forest.jpg);
+	background-size: auto 100%;
+	color: var(--light-grey);
+}
+
+.thumb-caption {
+	color: var(--dark-grey);
+}
+
+#about {
+	background-image: url("../images/hemlock.jpg");
+	background-size: auto 100%;
+	color: var(--white);
 }
