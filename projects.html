@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max Mraz - Portfolio</title>
+    <link rel="stylesheet" href="./css/layout-projects.css">
+    <link rel="stylesheet" href="./css/style-projects.css">
+    <link rel="stylesheet" type="text/css" href="./css/universal.css">
+</head>
+<body>
+	<div class="container">
+		<main>
+			<div class="slideshow-container">
+				
+				<div class="mySlides fade">
+					<div class="numbertext">1</div>
+					<img src="images/project-1-screen.jpg">
+					<div class="text">Caption 1</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">2</div>
+					<img src="images/project-2-screen.jpg">
+					<div class="text">Caption 2</div>
+				</div>
+
+				<div class="mySlides fade">
+					<div class="numbertext">3</div>
+					<img src="images/project-3-screen.jpg">
+					<div class="text">Caption 3</div>
+				</div>
+
+				<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onClick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<div id="slideshow-dots">
+				<span class="dot" onClick="currentSlide(1)"></span>
+				<span class="dot" onClick="currentSlide(2)"></span>
+				<span class="dot" onClick="currentSlide(3)"></span>
+
+			</div>
+		</main>
+	</div>
+</body>
+<script src="js/project-slideshow.js"></script>
+</html>

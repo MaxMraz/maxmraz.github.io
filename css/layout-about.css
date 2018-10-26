@@ -1,0 +1,87 @@
+main {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+.modal{
+	display:none;
+	position:fixed;
+	z-index: 1;
+	left: 0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: var(--dark-grey);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: var(--light-grey);
+	border: 1px solid var(--white);
+	margin: 15% auto;
+	padding: 20px;
+	width: 80%;
+}
+
+/*modal close button*/
+.close {
+	color: var(--white);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+	.close:hover, .close:focus {
+		color: var(--dark-grey);
+		text-decoration: none;
+		cursor: pointer;
+	}
+
+#bio {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 500px;
+}
+	#bio * {
+		margin: .5rem 0;
+	}
+
+#contact-info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+	#contact-info li a {
+		padding: .25rem 1rem;
+	}
+
+#finger-guns-img {
+	border-radius: 50%;
+	float: left;
+	width: 25vw;
+}
+
+#headshot-photo {
+	border-radius: 50%;
+}
+
+#photo-and-contact {
+	align-items: center;
+	display:flex;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+#skills-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 5px;
+}
+	#skills-list li {
+		border: 1px solid var(--white);
+		text-align: center;
+	}
