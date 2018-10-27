@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Max Mraz - Portfolio</title>
+    <link rel="stylesheet" href="./css/layout-projects.css">
+    <link rel="stylesheet" href="./css/style-projects.css">
+    <link rel="stylesheet" type="text/css" href="./css/universal.css">
+</head>
+<body>
+	<main>
+		<header><h1>Projects:</h1></header>
+		<section class="slideshow-container">
+			<!-- backward arrow -->
+			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+
+			<a class="mySlides fade" href="#oceans-heart">
+				<figure>					
+					<img src="images/project-1-screen.jpg">
+					<figcaption>Ocean's Heart</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="#sweater-review-site">
+				<figure>					
+					<img src="images/sweaters.jpg">
+					<figcaption>Greg's Sweaters, Reviewed</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="#life-review-site">
+				<figure>					
+					<img src="images/gregs-whole-life.jpg">
+					<figcaption>Greg's Whole Life, Reviewed</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="#virtual-pet">
+				<figure>					
+					<img src="images/project-2-screen.jpg">
+					<figcaption>Virtual Pet</figcaption>
+				</figure>
+			</a>
+
+			<a class="mySlides fade" href="#virtual-pet-shelter">
+				<figure>					
+					<img src="images/project-3-screen.jpg">
+					<figcaption>Virtual Pet Shelter</figcaption>
+				</figure>
+			</a>
+
+			<!-- forward arrow -->
+			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+
+		</section> <!-- close slideshow section -->
+
+<!-- -----------------------------------------PROJECTS------------------------------------------------------- -->
+		<section id="projects-section">
+			<section class="project" id="oceans-heart">
+				<figure>
+					<img src="images/project-1-screen.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Ocean's Heart</h2>
+					<p>
+						A 2D action adventure game. Play as a daughter searching an elaborate and beautiful archipelago for her father, who is searching the same world for the pirates that attacked their home. Fight against beastiaries of monsters, explore intricate landscapes and dungeons, help quirky characters, uncover mysteries in ancient ruins.
+					</p>
+					<p>
+						Lua Scripting, APIs and frameworks, Graphic Design, UX Design, Sound Design, Project Management, Marketing
+					</p>
+					<a href="https://twitter.com/11mraz">Developer Log</a>
+				</div>
+			</section>
+
+			<section class="project" id="sweater-review-site">
+				<figure>
+					<img src="images/sweaters.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Greg's Sweaters, Reviewed</h2>
+					<p>
+						A school project to make a review website. In this case, a website created to review the sweater collection of someone's friend. As you scroll through the sometimes-harsh reviews of an oft-mocked collection of sweaters, you realize the depts of the friendship between Greg and the writer.
+					</p>
+					<p>
+						HTML, Spring Boot, MVC, Dynamic Webpages and Templates, Mockito, Thymeleaf, Gradle
+					</p>
+					<a href="https://github.com/MaxMraz/reviews-site">Github Repository</a>
+				</div>
+			</section>
+
+			<section class="project" id="life-review-site">
+				<figure>
+					<img src="images/gregs-whole-life.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Greg's Whole Life, Reviewed</h2>
+					<p>
+						An expanded form of the sweater review website, in which Greg's friend reviews Greg's whole life. From judging his choice in degree and house to picking his favorite of Greg's children, this website has it all. Greg's friend has picked up a few CSS skills and experience with databases, and made this website much more stylish and efficient.
+					</p>
+					<p>
+						HTML, CSS, JPA, H2 Databases, Spring Boot, MVC, Dynamic Webpages and Templates, Mockito, Thymeleaf, Gradle
+					</p>
+					<a href="https://github.com/MaxMraz/son-of-reviews-site">Github Repository</a>
+				</div>
+			</section>
+
+			<section class="project" id="virtual-pet">
+				<figure>
+					<img src="images/project-2-screen.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Virtual Pet</h2>
+					<p>
+						A tomagachi-like console program, wherein the user finds a small robot and must take care of it. Teach it about the world and try to get on its good side before it becomes self-aware and causes the singularity. Take your robot on adventures such as trips to the grocery store or the park. Plant flowers together. Teach your robot not to hack the FBI's mainframe.
+					</p>
+					<p>
+						Java, Object-Oriented Programming Principles, Text Processing, Main Loops
+					</p>
+					<a href="https://github.com/MaxMraz/VirtualPet">Github Repository</a>
+				</div>
+			</section>
+
+			<section class="project" id="virtual-pet-shelter">
+				<figure>
+					<img src="images/project-3-screen.jpg">
+				</figure>
+				<div class="project-text">
+					<h2>Virtual Pet Shelter</h2>
+					<p>
+						The logical continuation of the Virtual Pet project, in which you find yourself operating Max and Riley's Shelter for Abandoned and Feral Pet Rocks. Adopt and care for as many pet rocks as you want, but each will need to be fed, watered, and played with or else they will crumble to dust. What will you feed your rocks? Will they grow happy enough to get loving families to adopt them?
+					</p>
+					<p>
+						Java, Test-Driven Design and Unity Tests, Collections, Pair Programming
+					</p>
+					<a href="https://github.com/MaxMraz/virtual-pet-shelter">Github Repository</a>
+				</div>
+			</section>
+		</section>
+		
+	</main>
+
+</body>
+<script src="js/project-slideshow.js"></script>
+</html>

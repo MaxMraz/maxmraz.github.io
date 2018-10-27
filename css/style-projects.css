@@ -1,0 +1,13 @@
+main {
+	background-color: var(--white);
+/*	background-image: url(../images/leaves2.jpg);*/
+}
+
+.project {
+/*	background-image: linear-gradient(red, yellow);*/
+}
+
+.slideshow-container {
+	background-image: url(../images/hemlock.jpg);
+	background-size: 100vw;
+}

@@ -22,7 +22,7 @@ a {
 }
 
 a:hover {
-	background-color: var(--color-1);
+/*	background-color: var(--color-1);*/
 	transition: .3s;
 }
 
