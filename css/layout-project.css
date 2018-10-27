@@ -1,0 +1,22 @@
+body {
+	background-color: var(--light-grey);
+	display: flex;
+	justify-content: space-around;
+}
+	body * {
+		margin: 1rem;
+	}
+
+figure {
+	width: 60vw;
+}
+	figure img {
+		width: 100%;
+	}
+
+
+.project-text {
+	display: flex;
+	flex-direction: column;
+
+}
