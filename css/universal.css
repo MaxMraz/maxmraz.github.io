@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
 :root {
 
-	--white: #C7D7D7;
-	--color-1: #93A59E;
-	--light-grey: #565944;
-	--dark-grey: #3D3F34;
-	--color-2: #AC893E;
+	--white: #D7D3D2;
+	--color-1: #736433;
+	--color-2: #A48242;
+	--light-grey: #626E6E;
+	--dark-grey: #232420;
 
 }
 
@@ -36,6 +37,10 @@ a{
 		background-color: rgba(0,0,0,.75);
 	}
 
+h1, h2 {
+	font-family: 'Amatic SC', 'Open Sans', sans-serif;
+	font-size: 3rem;
+}
 /*figure img{
 	max-width: 100%;
 }*/

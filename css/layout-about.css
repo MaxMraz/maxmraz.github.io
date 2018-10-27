@@ -2,7 +2,21 @@ main {
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 100vh;
+	min-height: 100vh;
+}
+	main * {
+		margin-bottom: 1rem;
+	}
+
+button {
+	background-color: black;
+	border: 1px solid var(--white);
+	color: var(--white);
+	cursor: pointer;
+	padding: 0.25rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	size: 48px;
 }
 
 .modal{
@@ -19,19 +33,21 @@ main {
 }
 
 .modal-content {
-	background-color: var(--light-grey);
+	background-color: rgba(0,0,0,0.85);
 	border: 1px solid var(--white);
+	display: flex;
+	justify-content: space-between;
 	margin: 15% auto;
 	padding: 20px;
 	width: 80%;
 }
-
 /*modal close button*/
 .close {
 	color: var(--white);
 	float: right;
 	font-size: 28px;
 	font-weight: bold;
+	margin: 2rem 2rem 0 0;
 }
 	.close:hover, .close:focus {
 		color: var(--dark-grey);
@@ -40,6 +56,7 @@ main {
 	}
 
 #bio {
+/*	background-color: rgba(0,0,0,0.5);*/
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -61,8 +78,8 @@ main {
 
 #finger-guns-img {
 	border-radius: 50%;
-	float: left;
-	width: 25vw;
+
+	max-width: 25vw;
 }
 
 #headshot-photo {
