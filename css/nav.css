@@ -1,0 +1,26 @@
+body {
+	position: relative;
+}
+
+.nav-button {
+	float: left;
+	position: fixed;
+	top: 1rem;
+	left: 0.5rem;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid var(--white);
+	color: var(--white);
+	cursor: pointer;
+	padding: 0.25rem 1rem;
+	text-align: center;
+	text-decoration: none;
+	size: 48px;
+}
+
+.nav-list {
+	display: none;
+	float: left;
+	position: fixed;
+	left: 0.5rem;
+	top: 4rem;
+}

@@ -4,14 +4,22 @@
 	<title>Max Mraz - Portfolio</title>
     <link rel="stylesheet" href="./css/layout-projects.css">
     <link rel="stylesheet" href="./css/style-projects.css">
+    <link rel="stylesheet" href="./css/nav.css">
     <link rel="stylesheet" type="text/css" href="./css/universal.css">
 </head>
 <body>
+	<nav>
+		<a class="nav-button">Navigation</a>
+		<ul class="nav-list">
+			<li><a href="about.html">About</a></li>
+			<li><a href="projects.html">Projects</a></li>
+		</ul>
+	</nav>
 	<main>
 		<header><h1>Projects:</h1></header>
 		<section class="slideshow-container">
 			<!-- backward arrow -->
-			<a class="prev" onClick="plusSlides(-1)">&#10094;</a>
+			<a class="prev">&#10094;</a>
 
 			<a class="mySlides fade" href="#oceans-heart">
 				<figure>					
@@ -49,7 +57,7 @@
 			</a>
 
 			<!-- forward arrow -->
-			<a class="next" onClick="plusSlides(1)">&#10095;</a>
+			<a class="next">&#10095;</a>
 
 		</section> <!-- close slideshow section -->
 
@@ -139,5 +147,8 @@
 	</main>
 
 </body>
-<script src="js/project-slideshow.js"></script>
+<script src="js/dom.js"></script>
+<!-- <script src="js/project-slideshow.js"></script> -->
+<script src="js/nav.js"></script>
+<script src="js/slideshow.js"></script>
 </html>
