@@ -69,10 +69,12 @@ describe('projectsSlideshow', () => {
 	forwardArrow.classList.add('next')
 	const item1 = document.createElement('a')
 	item1.classList.add('mySlides')
-	item1.style.display = 'block'
+	// item1.style.display = 'block'
 	const item2 = document.createElement('a')
 	item2.classList.add('mySlides')
-	item2.style.display = 'none'
+	const item3 = document.createElement('a')
+	item3.classList.add('mySlides')
+	// item2.style.display = 'none'
 
 	addSlideshow([item1, item2], backArrow, forwardArrow)
 
@@ -81,10 +83,10 @@ describe('projectsSlideshow', () => {
 		expect(item2.style.display).toBe('block')
 	})
 
-	test('should go back from slide 2 to slide 1', () => {
+	test('should go back', () => {
+		forwardArrow.click()
 		forwardArrow.click()
 		backArrow.click()
-		expect(item2.style.display).toBe('none')
 		expect(item1.style.display).toBe('block')
 
 	})

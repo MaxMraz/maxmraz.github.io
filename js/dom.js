@@ -23,15 +23,45 @@ function addModal(button, modal, closeButton) {
 }
 
 
+// function addSlideshow(slides, prev, next) {
+// 	let slideIndex = 1
+// 	showSlides(slideIndex, slides)
+// 	prev.addEventListener('click', () => {
+// 		showSlides((slideIndex-1), slides)
+// 	})
+// 	next.addEventListener('click', () => {
+// 		showSlides((slideIndex+1), slides)
+// 	})
+// }
+
+// function showSlides(slideIndex, slides){
+// 	if (slideIndex > slides.length) {slideIndex = 1}
+// 	if (slideIndex < 1) {slideIndex = slides.length}
+// 	let i
+// 	for (i = 0; i < slides.length; i++) {
+// 		slides[i].style.display = "none"
+// 	}
+// 	slides[slideIndex-1].style.display = "block"
+// 	console.log(slideIndex)
+// }
+
+// function plusSlides(n, slides, slideIndex) {
+// 	showSlides(slideIndex += n, slides)
+// }
+
+let slideIndex
 function addSlideshow(slides, prev, next) {
-	let slideIndex = 1
-	showSlides(slideIndex, slides, slideIndex)
-	prev.addEventListener('click', () => {plusSlides(-1, slides, slideIndex)})
-	next.addEventListener('click', () => {plusSlides(1, slides, slideIndex)})
+	slideIndex = 1
+	showSlides(slideIndex, slides)
+	prev.addEventListener('click', () => {
+		plusSlides((-1), slides)
+	})
+	next.addEventListener('click', () => {
+		plusSlides(1, slides)
+	})
 }
 
-function showSlides(n, slides, slideIndex){
-	let i
+function showSlides(n, slides){
 	if (n > slides.length) {slideIndex = 1}
 	if (n < 1) {slideIndex = slides.length}
 	for (i = 0; i < slides.length; i++) {
@@ -40,8 +70,8 @@ function showSlides(n, slides, slideIndex){
 	slides[slideIndex-1].style.display = "block"
 }
 
-function plusSlides(n, slides, slideIndex) {
-	showSlides(slideIndex += n, slides, slideIndex)
+function plusSlides(n, slides) {
+	showSlides(slideIndex += n, slides)
 }
 
 
