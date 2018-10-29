@@ -1,7 +1,8 @@
 const {
 	addNav,
 	addModal,
-	addSlideshow
+	addSlideshow,
+	addCollapsibles
 } = require('../js/dom.js')
 
 
@@ -91,4 +92,45 @@ describe('projectsSlideshow', () => {
 
 	})
 
+})
+
+describe('collapseProjectDescriptions', () => {
+	const section1 = document.createElement('section')
+	section1.classList.add('project')
+	const button1 = document.createElement('button')
+	button1.classList.add('collapse-button')
+	const text1 = document.createElement('div')
+	text1.classList.add('project-text')
+	text1.style.display = 'none'
+
+	section1.appendChild(button1)
+	section1.appendChild(text1)
+
+	const section2 = document.createElement('section')
+	section2.classList.add('project')
+	const button2 = document.createElement('button')
+	button2.classList.add('collapse-button')
+	const text2 = document.createElement('div')
+	text2.classList.add('project-text')
+	text2.style.display = 'none'
+
+	section2.appendChild(button2)
+	section2.appendChild(text2)
+
+	const buttons = [button1, button2]
+	const texts = [text1, text2]
+
+	addCollapsibles(buttons, texts)
+
+
+	test('should exand project description', () => {
+		button1.click()
+		expect(text1.style.display).toBe('flex')
+	})
+
+	test('should collapse project description', () => {
+		text1.style.display = 'flex'
+		button1.click()
+		expect(text1.style.display).toBe('none')
+	})
 })

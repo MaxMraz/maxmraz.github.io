@@ -50,6 +50,7 @@ function addModal(button, modal, closeButton) {
 // }
 
 let slideIndex
+
 function addSlideshow(slides, prev, next) {
 	slideIndex = 1
 	showSlides(slideIndex, slides)
@@ -65,9 +66,9 @@ function showSlides(n, slides){
 	if (n > slides.length) {slideIndex = 1}
 	if (n < 1) {slideIndex = slides.length}
 	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none"
+		slides[i].style.display = 'none'
 	}
-	slides[slideIndex-1].style.display = "block"
+	slides[slideIndex-1].style.display = 'block'
 }
 
 function plusSlides(n, slides) {
@@ -75,9 +76,23 @@ function plusSlides(n, slides) {
 }
 
 
+function addCollapsibles(buttons, texts) {
+	let i
+	for (i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener('click', (event) => {
+			const text = event.target.nextElementSibling
+			if (text.style.display === 'flex'){
+				text.style.display = 'none'
+			} else {
+				text.style.display = 'flex'
+			}
+		})
+	}
+}
 
 module.exports = {
 	addNav,
 	addModal,
-	addSlideshow
+	addSlideshow,
+	addCollapsibles
 }
