@@ -2,25 +2,49 @@ body {
 	position: relative;
 }
 
-.nav-button {
+nav {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
 	float: left;
 	position: fixed;
 	top: 1rem;
 	left: 0.5rem;
+}
+	nav * {
+		left: 0px;
+	}
+
+.nav-button {
 	background-color: rgba(0,0,0,0.5);
 	border: 1px solid var(--white);
 	color: var(--white);
 	cursor: pointer;
-	padding: 0.25rem 1rem;
+	width: 35vw;
 	text-align: center;
 	text-decoration: none;
-	size: 48px;
+
 }
 
 .nav-list {
 	display: none;
-	float: left;
-	position: fixed;
-	left: 0.5rem;
-	top: 4rem;
+	width: 35vw;
+}
+	.nav-list li {
+		margin-top: 25px;
+		
+	}
+	.nav-list li a {
+		width: 35vw;
+	}
+
+
+
+@media (min-width: 800px) {
+	.nav-button {
+		width: 20vw;
+	}
+	.nav-list {
+		width: 20vw;
+	}
 }
