@@ -1,9 +1,11 @@
+const navDisplayStyle = 'block';
+
 function addNav(navButton, navList) {
 	navButton.addEventListener('click', () =>{
-		if (navList.style.display === 'block'){
+		if (navList.style.display === navDisplayStyle){
 			navList.style.display = 'none'			
 		} else {
-		navList.style.display = 'block'
+		navList.style.display = navDisplayStyle
 		}
 	})
 }
