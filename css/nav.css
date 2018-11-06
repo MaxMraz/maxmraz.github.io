@@ -31,8 +31,15 @@ nav {
 		margin-top: .5rem;
 	}
 
-@media screen(min-width: 700px) {
+@media screen and (min-width: 700px) {
 	.nav-list {
-		display: inline-block;
+		display: flex;
+	}
+		.nav-list li {
+			margin: 0 1rem;
+		}
+
+	.nav-button {
+		display: none;
 	}
 }
