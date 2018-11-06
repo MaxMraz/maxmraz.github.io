@@ -42,7 +42,7 @@ header {
 }
 
 .project-text {
-	display: none;
+	display: flex;
 	flex-direction: column;
 
 }

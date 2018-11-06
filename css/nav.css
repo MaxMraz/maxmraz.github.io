@@ -8,43 +8,38 @@ nav {
 	justify-content: start;
 	float: left;
 	position: fixed;
-	top: 1rem;
-	left: 0.5rem;
 }
-	nav * {
-		left: 0px;
+	nav a {
+		background-color: rgba(0,0,0,0.5);
+		border: none;
+		color: var(--white);
+		cursor: pointer;
+		padding: 0;
+		margin: 1rem 0;
+		text-align: center;
+		text-decoration: none;
 	}
 
 .nav-button {
-	background-color: rgba(0,0,0,0.5);
-	border: 1px solid var(--white);
-	color: var(--white);
-	cursor: pointer;
-	width: 35vw;
-	text-align: center;
-	text-decoration: none;
-
+	margin-bottom: 2rem;
 }
 
 .nav-list {
 	display: none;
-	width: 35vw;
 }
 	.nav-list li {
-		margin-top: 25px;
-		
-	}
-	.nav-list li a {
-		width: 35vw;
+		margin-top: .5rem;
 	}
 
-
-
-@media (min-width: 800px) {
-	.nav-button {
-		width: 20vw;
-	}
+@media screen and (min-width: 700px) {
 	.nav-list {
-		width: 20vw;
+		display: flex;
+	}
+		.nav-list li {
+			margin: 0 1rem;
+		}
+
+	.nav-button {
+		display: none;
 	}
 }
