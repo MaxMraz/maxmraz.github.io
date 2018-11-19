@@ -30,15 +30,16 @@ header {
 	margin: 4rem auto;
 	padding: 4rem 0;
 }
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 750px) {
 	.project {
-		display: flex;
-		flex-direction: row;
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		grid-gap: 1rem;
 	}
 
-	.project figure {
-		max-width: 100vw;
-	}
+/*	.project figure {
+		width: 30vw;
+	}*/
 }
 
 .project-text {
@@ -47,6 +48,9 @@ header {
 
 }
 
+#projects-section * {
+	margin: 1rem;
+}
 
 
 /*-------------------slideshow-----------------------*/
@@ -120,8 +124,4 @@ figcaption {
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
-}
-
-#projects-section * {
-	margin: 1rem;
 }
