@@ -17,6 +17,6 @@ main {
 }
 
 .slideshow-container {
-	background-image: url(../images/hemlock.jpg);
-	background-size: 100vw;
+	/* background-image: url(../images/hemlock.jpg);
+	background-size: 100vw; */
 }

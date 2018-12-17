@@ -82,12 +82,12 @@ header {
 }
 	.mySlides figure img {
 		width: 100%;
-		border-radius: 50%;
+		/* border-radius: 50%; */
 	}
 
 .prev, .next {
-	background-color: rgba(0,0,0,0.25)
-	border: 1px solid black;
+	background-color: rgba(0,0,0,0.25);
+	border-radius: 50%;
 	cursor: pointer;
 	height: 100%;
 	font-size: 2rem;

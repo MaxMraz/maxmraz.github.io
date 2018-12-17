@@ -10,7 +10,7 @@ nav {
 	position: fixed;
 }
 	nav a {
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.3);
 		border: none;
 		color: var(--white);
 		cursor: pointer;
@@ -25,11 +25,18 @@ nav {
 }
 
 .nav-list {
-	display: none;
+	/* background-color: var(--color-2); */
+	background-image: url(../images/hemlock.jpg);
+	background-size: 100vw;
+	width: 100vw;
 }
 	.nav-list li {
 		margin-top: .5rem;
+		padding: 0 1rem;
 	}
+		.nav-list li a {
+			padding: 0 1rem;
+		}
 
 @media screen and (min-width: 700px) {
 	.nav-list {
